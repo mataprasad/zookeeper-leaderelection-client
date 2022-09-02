@@ -46,7 +46,7 @@ namespace zookeeper_leaderelection_client
 
         public Task Connect()
         {
-            _zookeeper = new ZooKeeper("localhost:2181,localhost:2888,localhost:3888", 30000, this);
+            _zookeeper = new ZooKeeper("localhost:2181", 30000, this);
             return Task.CompletedTask;
         }
 
